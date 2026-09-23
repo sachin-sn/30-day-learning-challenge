@@ -37,7 +37,7 @@ better.
 | Day | Topic                                          | Stack                               | Status    | Blog | LinkedIn |
 | --- | ---------------------------------------------- | ----------------------------------- | --------- | ---- | -------- |
 | 01  | [Bun Runtime vs Node.js](./day-01-bun-vs-node) | Bun, Node.js                        | Completed | —    | —        |
-| 02  | Runtime Validation with Zod                    | TypeScript, Zod                     | Planned   | —    | —        |
+| 02  | [Runtime Validation with Zod](./day-02-runtime-validation-zod) | TypeScript, Zod | In progress | —    | —        |
 | 03  | Type-safe APIs with tRPC                       | tRPC, TypeScript                    | Planned   | —    | —        |
 | 04  | Redis Caching Patterns                         | Redis, Node.js                      | Planned   | —    | —        |
 | 05  | DynamoDB Single-Table Design                   | AWS DynamoDB                        | Planned   | —    | —        |
