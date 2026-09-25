@@ -39,7 +39,7 @@ better.
 | 01  | [Bun Runtime vs Node.js](./day-01-bun-vs-node) | Bun, Node.js                        | Completed | —    | —        |
 | 02  | [Runtime Validation with Zod](./day-02-runtime-validation-zod) | TypeScript, Zod | Completed | —    | —        |
 | 03  | [Type-safe APIs with tRPC](./day-03-type-safe-apis-trpc) | tRPC, TypeScript | Completed | —    | —        |
-| 04  | Redis Caching Patterns                         | Redis, Node.js                      | Planned   | —    | —        |
+| 04  | [Redis Caching Patterns](./day-04-redis-caching-patterns) | Redis, Bun/Node.js | Completed | —    | —        |
 | 05  | DynamoDB Single-Table Design                   | AWS DynamoDB                        | Planned   | —    | —        |
 | 06  | GraphQL Basics                                 | GraphQL Yoga/Apollo                 | Planned   | —    | —        |
 | 07  | Kafka Fundamentals                             | Kafka/Redpanda, Docker              | Planned   | —    | —        |
