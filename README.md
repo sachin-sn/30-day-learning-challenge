@@ -41,7 +41,7 @@ better.
 | 03  | [Type-safe APIs with tRPC](./day-03-type-safe-apis-trpc) | tRPC, TypeScript | Completed | —    | —        |
 | 04  | [Redis Caching Patterns](./day-04-redis-caching-patterns) | Redis, Bun/Node.js | Completed | —    | —        |
 | 05  | [DynamoDB Single-Table Design](./day-05-dynamodb-single-table) | AWS DynamoDB | Completed | —    | —        |
-| 06  | GraphQL Basics                                 | GraphQL Yoga/Apollo                 | Planned   | —    | —        |
+| 06  | [GraphQL Basics](./day-06-graphql-basics) | GraphQL Yoga, TypeScript | Completed | —    | —        |
 | 07  | Kafka Fundamentals                             | Kafka/Redpanda, Docker              | Planned   | —    | —        |
 | 08  | Kafka Consumer Groups & Partitioning           | Kafka/Redpanda                      | Planned   | —    | —        |
 | 09  | Event-Driven Architecture (SNS/SQS vs Pub/Sub) | AWS SNS/SQS, GCP Pub/Sub            | Planned   | —    | —        |
