@@ -43,7 +43,7 @@ better.
 | 05  | [DynamoDB Single-Table Design](./day-05-dynamodb-single-table) | AWS DynamoDB | Completed | —    | —        |
 | 06  | [GraphQL Basics](./day-06-graphql-basics) | GraphQL Yoga, TypeScript | Completed | —    | —        |
 | 07  | [Kafka Fundamentals](./day-07-kafka-fundamentals) | Redpanda, Docker | In progress | —    | —        |
-| 08  | Kafka Consumer Groups & Partitioning           | Kafka/Redpanda                      | Planned   | —    | —        |
+| 08  | [Kafka Consumer Groups & Partitioning](./day-08-kafka-consumer-groups-partitioning) | Kafka/Redpanda | In progress | —    | —        |
 | 09  | Event-Driven Architecture (SNS/SQS vs Pub/Sub) | AWS SNS/SQS, GCP Pub/Sub            | Planned   | —    | —        |
 | 10  | Real-time with WebSockets                      | WebSockets, Node.js                 | Planned   | —    | —        |
 | 11  | gRPC Service-to-Service Communication          | gRPC, Protocol Buffers              | Planned   | —    | —        |

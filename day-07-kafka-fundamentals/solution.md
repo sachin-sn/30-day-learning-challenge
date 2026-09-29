@@ -5,10 +5,6 @@
 
 ## Approach
 
-<TODO: your own words — why kafkajs on Node instead of the two suggested
-combos (bun+kafkajs or node+confluent), what you tried first, what changed
-along the way.>
-
 Ran Redpanda + Redpanda Console via `docker-compose.yml` (single broker,
 Kafka API on `localhost:19092`), confirmed it was up by creating the
 `todos` topic with `rpk` through `docker exec` before writing any app code.
@@ -50,7 +46,7 @@ so the decoupling in Part 4 is real rather than simulated.
   parameter so the same function can target `todos` or a scratch topic
   (`DEMO`) for isolation testing.
 - `src/node/consumer.ts` — subscribes to `todos` only, with `groupId:
-  "todo-consumer"` and `fromBeginning: true`, and logs every message as it
+"todo-consumer"` and `fromBeginning: true`, and logs every message as it
   arrives via `eachMessage`.
 - `src/node/docker-compose.yml` — single-broker Redpanda + Redpanda Console,
   Kafka API exposed on `19092`, Console on `8080` for a UI into topics and
@@ -61,7 +57,7 @@ so the decoupling in Part 4 is real rather than simulated.
 - `Kafka` from `kafkajs` is a class, not a ready-made client —
   `Kafka.producer()` / `Kafka.consumer()` called directly on the import
   throws `Kafka.producer is not a function`. Needed `new Kafka({ brokers:
-  [...] })` first, then `kafka.producer()` / `kafka.consumer({ groupId })`.
+[...] })` first, then `kafka.producer()` / `kafka.consumer({ groupId })`.
 - `kafka.consumer()` requires a `groupId` — omitting it throws a config
   error before it ever connects.
 - `producer.send()`'s `messages` array needs `{ value: string | Buffer }`
@@ -73,7 +69,7 @@ so the decoupling in Part 4 is real rather than simulated.
   `package.json`, top-level `import`/`await` aren't legal in Node's default
   CommonJS mode; and Node 22.2 predates native TypeScript support entirely
   (that needs 22.6+ experimentally, 23.6+ by default), so plain `node
-  producer.ts` couldn't run it either way. Installed `tsx` as a
+producer.ts` couldn't run it either way. Installed `tsx` as a
   version-independent runner instead of chasing a Node upgrade.
 - `tsx`'s `esbuild` dependency is a native binary — installing it in one
   environment (e.g. a remote/CI shell) and running it in another

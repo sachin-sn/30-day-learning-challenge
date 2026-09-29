@@ -1,0 +1,22 @@
+{
+  "name": "day-07-kafka-fundamentals",
+  "version": "1.0.0",
+  "description": "kafka fundamentals",
+  "main": "index.ts",
+  "scripts": {
+    "produce": "tsx producer.ts",
+    "consume": "tsx consumer.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "consume:analytics": "GROUP_ID=todo-consumer-analytics tsx consumer.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  },
+  "type": "module"
+}
