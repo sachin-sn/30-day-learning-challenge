@@ -45,7 +45,7 @@ better.
 | 07  | [Kafka Fundamentals](./day-07-kafka-fundamentals) | Redpanda, Docker | Completed | —    | —        |
 | 08  | [Kafka Consumer Groups & Partitioning](./day-08-kafka-consumer-groups-partitioning) | Kafka/Redpanda | Completed | —    | —        |
 | 09  | [Event-Driven Architecture (SNS/SQS vs Pub/Sub)](./day-09-event-driven-sns-sqs-pubsub) | AWS SNS/SQS, GCP Pub/Sub | Completed | —    | —        |
-| 10  | Real-time with WebSockets                      | WebSockets, Node.js                 | Planned   | —    | —        |
+| 10  | [Real-time with WebSockets](./day-10-realtime-websockets) | WebSockets, Node.js | Completed | —    | —        |
 | 11  | gRPC Service-to-Service Communication          | gRPC, Protocol Buffers              | Planned   | —    | —        |
 | 12  | Rate Limiting Algorithms from Scratch          | Node.js, Redis                      | Planned   | —    | —        |
 | 13  | Distributed Locks with Redis Redlock           | Redis                               | Planned   | —    | —        |

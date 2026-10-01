@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Day 10 — Live Todos</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+  #status { font-weight: 600; margin-bottom: 4px; }
+  #status.open { color: #2a9d5c; }
+  #status.closed { color: #c0392b; }
+  #my-id { font-family: monospace; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  li.presence { color: #888; font-size: 13px; }
+  form { margin: 16px 0; display: flex; gap: 8px; }
+  input { flex: 1; padding: 6px 8px; font-size: 14px; }
+  button { padding: 6px 12px; font-size: 14px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <h1>Day 10 — Live Todos</h1>
+  <div id="status" class="closed">connecting…</div>
+  <div>my id: <span id="my-id">—</span></div>
+  <form id="form">
+    <input id="title" placeholder="new todo title" autocomplete="off" />
+    <button type="submit">Add</button>
+  </form>
+  <ul id="todos"></ul>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const idEl = document.getElementById("my-id");
+    const listEl = document.getElementById("todos");
+
+    // Open this same file in multiple browser tabs to run Part 1's
+    // multi-client broadcast test — every tab is an independent client.
+    const ws = new WebSocket("ws://localhost:8080");
+
+    ws.onopen = () => {
+      statusEl.textContent = "connected";
+      statusEl.className = "open";
+    };
+    ws.onclose = () => {
+      statusEl.textContent = "disconnected";
+      statusEl.className = "closed";
+    };
+
+    ws.onmessage = (event) => {
+      const msg = JSON.parse(event.data);
+
+      if (msg.type === "welcome") {
+        idEl.textContent = msg.id;
+      } else if (msg.type === "todo-created") {
+        const li = document.createElement("li");
+        li.textContent = `[${msg.todo.priority}] ${msg.todo.title}  (from ${msg.from})`;
+        listEl.prepend(li);
+      } else if (msg.type === "direct-message") {
+        const li = document.createElement("li");
+        li.style.fontWeight = "600";
+        li.textContent = `DM from ${msg.from}: ${msg.text}`;
+        listEl.prepend(li);
+      } else if (msg.type === "presence") {
+        const li = document.createElement("li");
+        li.className = "presence";
+        li.textContent = `client ${msg.id} ${msg.event} — ${msg.total} connected`;
+        listEl.prepend(li);
+      }
+    };
+
+    document.getElementById("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const titleInput = document.getElementById("title");
+      const title = titleInput.value.trim();
+      if (!title) return;
+      ws.send(JSON.stringify({ type: "create-todo", title }));
+      titleInput.value = "";
+    });
+  </script>
+</body>
+</html>
