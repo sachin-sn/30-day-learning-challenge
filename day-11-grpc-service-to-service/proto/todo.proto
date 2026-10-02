@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package todo;
+
+// One service, three RPCs — one of each shape gRPC supports. The point of
+// today isn't the todo domain (that's unchanged from every prior day), it's
+// comparing these three method *shapes* against each other and against
+// Day 10's WebSocket and Day 3's tRPC calls.
+service TodoService {
+  // UNARY — one request in, one response out, then the call is done.
+  // This is the shape that looks just like a tRPC mutation or a REST POST.
+  rpc CreateTodo (CreateTodoRequest) returns (Todo);
+
+  // SERVER STREAMING — one request opens the call, then the SERVER sends
+  // back as many responses as it wants, whenever it wants, until it closes
+  // the stream. The client only sends once, at the start.
+  rpc WatchTodos (WatchRequest) returns (stream Todo);
+
+  // BIDIRECTIONAL STREAMING — both sides keep the call open and can send
+  // messages independently of each other, in any order, at any time, until
+  // either side ends it.
+  rpc SyncTodos (stream TodoEvent) returns (stream TodoEvent);
+}
+
+message CreateTodoRequest {
+  string title = 3;
+}
+
+message Todo {
+  string id = 1;
+  string title = 2;
+  int64 created_at_ms = 3;
+}
+
+// Intentionally empty today — a real system would filter by user id, label,
+// etc. It exists as a message (not just "no argument") because every gRPC
+// method needs exactly one request message type, even server-streaming ones.
+message WatchRequest {
+}
+
+message TodoEvent {
+  string from = 1;
+  string message = 2;
+  int64 sent_at_ms = 3;
+}

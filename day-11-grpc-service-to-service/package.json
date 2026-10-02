@@ -1,0 +1,24 @@
+{
+  "name": "day-11-grpc-service-to-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Day 11 of the 30-day challenge — gRPC unary, server-streaming, and bidirectional-streaming RPCs, compared against Day 10's WebSockets and Day 3's tRPC.",
+  "scripts": {
+    "proto:gen": "protoc --plugin=protoc-gen-ts_proto=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./src/gen --ts_proto_opt=outputServices=grpc-js,env=node,esModuleInterop=true,useOptionals=messages -I proto proto/todo.proto",
+    "build": "tsc -p .",
+    "server": "ts-node src/server.ts",
+    "create": "ts-node src/client-create.ts",
+    "watch": "ts-node src/client-watch.ts",
+    "sync": "ts-node src/client-sync.ts",
+    "break-contract": "ts-node src/break-contract.ts"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "ts-proto": "^2.2.5",
+    "typescript": "^5.6.3"
+  }
+}
