@@ -1,0 +1,21 @@
+{
+  "name": "day-12-rate-limiting-algorithms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Day 12 of the 30-day challenge — fixed window, sliding window log, token bucket, and a deliberately broken-then-fixed naive counter, all backed by Redis.",
+  "scripts": {
+    "build": "tsc -p . --noEmit",
+    "demo:fixed-window": "ts-node src/demo-fixed-window-burst.ts",
+    "demo:sliding-window": "ts-node src/demo-sliding-window-burst.ts",
+    "demo:token-bucket": "ts-node src/demo-token-bucket.ts",
+    "demo:race": "ts-node src/demo-race-condition.ts"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
