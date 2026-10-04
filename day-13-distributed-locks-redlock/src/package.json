@@ -1,0 +1,23 @@
+{
+  "name": "day-13-distributed-locks-redlock",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Day 13 of the 30-day challenge — distributed locks with Redis, from a single-instance lock to Redlock.",
+  "scripts": {
+    "build": "tsc -p . --noEmit",
+    "part1": "ts-node part1-counter.ts",
+    "part1:nolock": "ts-node part1-counter.ts --no-lock",
+    "part2": "ts-node part2-ttl-expiry.ts",
+    "part3": "ts-node part3-wrong-owner.ts",
+    "part4": "ts-node part4-fencing.ts",
+    "part5": "ts-node part5-redlock.ts"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

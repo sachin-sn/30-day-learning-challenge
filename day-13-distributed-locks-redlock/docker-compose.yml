@@ -1,0 +1,50 @@
+# Day 13 — Redis for distributed-lock experiments.
+#
+#   Parts 1-4 (single instance):   docker compose up -d
+#   Part 5   (5-node Redlock):     docker compose --profile redlock up -d
+#   Check they're alive:           docker compose ps
+#   Stop and wipe everything:      docker compose --profile redlock down -v
+#
+# No volumes and persistence is off on purpose: `down` leaves nothing
+# behind, so every run starts from a clean slate.
+# The five instances are independent standalone servers (NOT a cluster),
+# which is what Redlock requires.
+
+x-redis: &redis-base
+  image: redis:7
+  command: ["redis-server", "--save", "", "--appendonly", "no"]
+  healthcheck:
+    test: ["CMD", "redis-cli", "ping"]
+    interval: 3s
+    timeout: 2s
+    retries: 5
+
+services:
+  redis-6379:
+    <<: *redis-base
+    container_name: redis-6379
+    ports: ["6379:6379"]
+
+  redis-6380:
+    <<: *redis-base
+    container_name: redis-6380
+    profiles: ["redlock"]
+    ports: ["6380:6379"]
+
+  redis-6381:
+    <<: *redis-base
+    container_name: redis-6381
+    profiles: ["redlock"]
+    ports: ["6381:6379"]
+
+  redis-6382:
+    <<: *redis-base
+    container_name: redis-6382
+    profiles: ["redlock"]
+    ports: ["6382:6379"]
+
+  redis-6383:
+    <<: *redis-base
+    container_name: redis-6383
+    profiles: ["redlock"]
+    ports: ["6383:6379"]
