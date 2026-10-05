@@ -1,0 +1,30 @@
+terraform {
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 3.0.0"
+    }
+  }
+}
+
+provider "docker" {}
+
+# Pulls the image
+resource "docker_image" "redis" {
+  name         = "redis:7"
+  keep_locally = false
+}
+
+# Runs the container
+resource "docker_container" "redis" {
+  name  = "redis-day14"
+  image = docker_image.redis.image_id
+
+  # Correct formatting for empty arguments in this provider
+  command = ["redis-server", "--save", "\"\"", "--appendonly", "no"]
+
+  ports {
+    internal = 6379
+    external = 6379
+  }
+}

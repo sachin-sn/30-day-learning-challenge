@@ -209,11 +209,13 @@ Redis is a single point of failure.
   And the per-instance timeout has to be tiny compared to the TTL, or one
   dead node eats the lock's whole lifetime before you know the vote count.
 - **`docker compose --profile redlock up -d` failed on port 6379**
-  ("port is already allocated") because something else was already bound to
-  it — most likely a Redis container left over from an earlier day. Part 5
-  still saw 5/5 instances (the other Redis answered on 6379), but that one
-  isn't part of this compose project, so `docker compose down -v` won't
-  remove it. `docker ps --filter publish=6379` shows what's holding the port.
+  ("port is already allocated") because a container named `redis-lock` — one
+  I had started by hand, outside this compose project — already published it
+  (`docker inspect redis-lock --format '{{json .HostConfig.PortBindings}}'`
+  showed host port 6379). Part 5 still saw 5/5 instances (that Redis answered
+  on 6379), but it isn't part of the compose project, so
+  `docker compose down -v` won't remove it. `docker ps --filter publish=6379`
+  shows what's holding the port.
 - **The no-lock result is far worse than "a few lost updates" (23 of 100, not
   somewhere in the 80s).** Obvious in hindsight — five workers racing each
   other overwrite each other's writes almost every round.

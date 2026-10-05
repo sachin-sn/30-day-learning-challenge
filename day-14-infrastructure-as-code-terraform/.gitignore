@@ -1,0 +1,9 @@
+# Terraform — never commit local state or provider binaries
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+tfplan
+
+# keep .terraform.lock.hcl tracked: it pins provider versions
