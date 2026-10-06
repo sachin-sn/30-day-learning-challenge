@@ -1,0 +1,23 @@
+{
+  "name": "day-15-functions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "local:aws": "tsx aws/local.ts",
+    "local:gcp": "tsx node_modules/@google-cloud/functions-framework/build/src/main.js --source=gcp/index.ts --target=app --port=8081",
+    "local:cf": "wrangler dev --port 8082",
+    "bench": "tsx bench.ts",
+    "build:aws": "esbuild aws/index.ts --bundle --platform=node --target=node22 --format=cjs --outfile=dist/aws/index.js && cd dist/aws && zip -q -j ../aws.zip index.js",
+    "build:gcp": "esbuild gcp/index.ts --bundle --platform=node --target=node22 --format=cjs --external:@google-cloud/functions-framework --outfile=dist/gcp/index.js && cp gcp/package.deploy.json dist/gcp/package.json"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0",
+    "wrangler": "^4.0.0",
+    "esbuild": "^0.28.2"
+  }
+}
