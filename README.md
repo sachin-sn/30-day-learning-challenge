@@ -46,13 +46,13 @@ better.
 | 08  | [Kafka Consumer Groups & Partitioning](./day-08-kafka-consumer-groups-partitioning) | Kafka/Redpanda | Completed | —    | —        |
 | 09  | [Event-Driven Architecture (SNS/SQS vs Pub/Sub)](./day-09-event-driven-sns-sqs-pubsub) | AWS SNS/SQS, GCP Pub/Sub | Completed | —    | —        |
 | 10  | [Real-time with WebSockets](./day-10-realtime-websockets) | WebSockets, Node.js | Completed | —    | —        |
-| 11  | gRPC Service-to-Service Communication          | gRPC, Protocol Buffers              | Planned   | —    | —        |
-| 12  | Rate Limiting Algorithms from Scratch          | Node.js, Redis                      | Planned   | —    | —        |
-| 13  | Distributed Locks with Redis Redlock           | Redis                               | Planned   | —    | —        |
-| 14  | Infrastructure as Code (Terraform/Pulumi)      | Terraform or Pulumi                 | Planned   | —    | —        |
-| 15  | Lambda vs Cloud Functions vs Workers           | AWS, GCP, Cloudflare                | Planned   | —    | —        |
-| 16  | Deploying to the Edge                          | Cloudflare Workers / Vercel Edge    | Planned   | —    | —        |
-| 17  | Docker Multi-stage + Minimal Kubernetes        | Docker, Kubernetes (kind)           | Planned   | —    | —        |
+| 11  | [gRPC Service-to-Service Communication](./day-11-grpc-service-to-service) | gRPC, Protocol Buffers | Completed | —    | —        |
+| 12  | [Rate Limiting Algorithms from Scratch](./day-12-rate-limiting-algorithms) | Node.js, Redis | Completed | —    | —        |
+| 13  | [Distributed Locks with Redis Redlock](./day-13-distributed-locks-redlock) | Redis | Completed | —    | —        |
+| 14  | [Infrastructure as Code (Terraform/Pulumi)](./day-14-infrastructure-as-code-terraform) | Terraform or Pulumi | Completed | —    | —        |
+| 15  | [Lambda vs Cloud Functions vs Workers](./day-15-lambda-vs-cloud-functions-vs-workers) | AWS, GCP, Cloudflare | Completed | —    | —        |
+| 16  | [Deploying to the Edge](./day-16-deploying-to-the-edge) | Cloudflare Workers | Completed | —    | —        |
+| 17  | [Docker Multi-stage + Minimal Kubernetes](./day-17-docker-multistage-kubernetes) | Docker, Kubernetes (kind) | Partial | —    | —        |
 | 18  | Observability with OpenTelemetry               | OpenTelemetry, Node.js              | Planned   | —    | —        |
 | 19  | CI/CD: Matrix Builds & Canary Deploys          | GitHub Actions                      | Planned   | —    | —        |
 | 20  | OAuth2/OIDC & JWT Deep Dive                    | Node.js, OAuth2                     | Planned   | —    | —        |

@@ -1,0 +1,16 @@
+{
+  "name": "day-17-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx server.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "esbuild server.ts --bundle --platform=node --format=esm --outfile=dist/server.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
