@@ -1,0 +1,26 @@
+name = "day16-edge"
+main = "index.ts"
+compatibility_date = "2025-01-01"
+# Part 2: this Worker calls another Worker over its public workers.dev URL.
+# Without this flag a Worker's fetch() to a Worker on the same account does not go through
+# the normal front door (see the compatibility flags docs).
+compatibility_flags = ["global_fetch_strictly_public"]
+
+[vars]
+ORIGIN_URL = "https://day16-origin.day15-hash.workers.dev/"
+
+# Part 3. Create the namespace first:  npx wrangler kv namespace create COUNTER_KV
+# then replace the id below with the id it prints.
+[[kv_namespaces]]
+binding = "COUNTER_KV"
+id = "PASTE_NAMESPACE_ID_HERE"
+
+[[durable_objects.bindings]]
+name = "COUNTER_DO"
+class_name = "Counter"
+
+# SQLite-backed Durable Object (the only kind the Free plan allows).
+# To delete it at clean-up, remove the class and the binding, and set: state = "deleted"
+[exports.Counter]
+type = "durable-object"
+storage = "sqlite"
