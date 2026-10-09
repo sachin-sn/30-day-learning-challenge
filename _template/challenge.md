@@ -1,45 +1,34 @@
 # Day NN — <Topic Title>
 
-**Difficulty:** Beginner | Intermediate | Advanced
-**Tech stack:** <languages, frameworks, services used today>
-**Estimated time:** <e.g. 1-2 hours>
+**Time box:** 90 minutes. Part A about 40 min, Part B about 30 min, notes about 15 min.
+If a part runs over by 15 minutes, stop, write down where you stopped, and move on.
+**Tech stack:** <what you use today>
 
 ## Why this matters
 
-<1-2 sentences on where this shows up in real systems / interviews / production.>
+<1-2 sentences: where this shows up in real systems or interviews.>
 
-## Learning objectives
+## Predictions (write these first, 5 min)
 
-By the end of today you should be able to:
+1. <a question with a number in the answer>
+2. <a question about what will happen>
 
-- <objective 1>
-- <objective 2>
-- <objective 3>
+## Part A — Build it (about 40 min)
 
-## The challenge
+<One small thing to build. Say exactly what "done" looks like.>
 
-<Concrete task description. Be specific enough that someone with no prior
-context on this repo could pick it up and attempt it.>
+## Part B — Measure or break it (about 30 min)
 
-### Requirements
+<One measurement or one deliberate failure. Say what output to save.>
 
-- <requirement 1>
-- <requirement 2>
+## Save this output
 
-### Constraints
+- <the 2 or 3 outputs to paste into solution.md>
 
-- <e.g. no external libraries beyond X, must run locally, time-box to N hours>
+## Not part of today
 
-## Bonus round (optional)
-
-- <a stretch goal for anyone who finishes early>
+<Things that are easy to start and slow to finish. Skip them.>
 
 ## Resources
 
-- <link to official docs>
-- <link to a good article/video>
-
----
-
-Once you've built something, write up `solution.md` in this folder using
-`../_template/solution.md` as a starting point.
+- <official docs link>

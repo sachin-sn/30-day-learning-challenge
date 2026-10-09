@@ -21,6 +21,10 @@ better.
 5. `_template/` — copy `challenge.md` and `solution.md` from here when adding
    a new day (either continuing this list or substituting your own)
 
+> From day 18 the challenges use a short format (about 90 minutes: build,
+> measure, notes; blog and LinkedIn optional). See
+> [plan-days-18-30.md](./plan-days-18-30.md). Days 01 to 17 keep the longer format.
+
 ## Rules of the challenge
 
 - One folder per day, numbered sequentially
@@ -53,7 +57,7 @@ better.
 | 15  | [Lambda vs Cloud Functions vs Workers](./day-15-lambda-vs-cloud-functions-vs-workers) | AWS, GCP, Cloudflare | Completed | —    | —        |
 | 16  | [Deploying to the Edge](./day-16-deploying-to-the-edge) | Cloudflare Workers | Completed | —    | —        |
 | 17  | [Docker Multi-stage + Minimal Kubernetes](./day-17-docker-multistage-kubernetes) | Docker, Kubernetes (kind) | Partial | —    | —        |
-| 18  | Observability with OpenTelemetry               | OpenTelemetry, Node.js              | Planned   | —    | —        |
+| 18  | [Observability with OpenTelemetry](./day-18-observability-opentelemetry) | OpenTelemetry, Node.js | Completed | —    | —        |
 | 19  | CI/CD: Matrix Builds & Canary Deploys          | GitHub Actions                      | Planned   | —    | —        |
 | 20  | OAuth2/OIDC & JWT Deep Dive                    | Node.js, OAuth2                     | Planned   | —    | —        |
 | 21  | LLM API Fundamentals                           | Claude/OpenAI API                   | Planned   | —    | —        |

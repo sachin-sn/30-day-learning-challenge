@@ -1,31 +1,24 @@
 # Day NN — Solution: <Topic Title>
 
-**Blog post:** <link, once published>
-**LinkedIn post:** <link, once shared>
+> Status: done / partly done. <If partly done, say which part is missing.>
 
-## Approach
+## Predictions (written before the work)
 
-<How you approached the problem. What you tried first, what changed along the way.>
+1. <prediction> — result: <right / wrong, with the number>
+2. <prediction> — result: <right / wrong>
 
-## Key concepts learned
+## Output
 
-- <concept 1 — the "aha" in one sentence>
-- <concept 2>
-- <concept 3>
+<Paste the real output of Part A and Part B, trimmed. Do not edit numbers.>
 
-## Code walkthrough
+## What I learned (3 sentences at most)
 
-<Point to the relevant files in `src/` and explain the interesting parts.
-Don't restate the code, explain the *why*.>
+<Only things the output above shows.>
 
-## Gotchas / things that tripped me up
+## Not measured / still open
 
-- <gotcha 1>
+- <what I did not check, and what I do not know>
 
-## What I'd do differently
+## Link
 
-<Anything you'd change with more time, or a more production-grade version.>
-
-## Further reading
-
-- <link>
+- <one docs link>
