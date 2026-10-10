@@ -58,7 +58,7 @@ better.
 | 16  | [Deploying to the Edge](./day-16-deploying-to-the-edge) | Cloudflare Workers | Completed | —    | —        |
 | 17  | [Docker Multi-stage + Minimal Kubernetes](./day-17-docker-multistage-kubernetes) | Docker, Kubernetes (kind) | Partial | —    | —        |
 | 18  | [Observability with OpenTelemetry](./day-18-observability-opentelemetry) | OpenTelemetry, Node.js | Completed | —    | —        |
-| 19  | [CI/CD: Matrix Builds & Canary Deploys](./day-19-cicd-matrix-canary) | GitHub Actions | In progress | —    | —        |
+| 19  | [CI/CD: Matrix Builds & Canary Deploys](./day-19-cicd-matrix-canary) | GitHub Actions | Completed | —    | —        |
 | 20  | OAuth2/OIDC & JWT Deep Dive                    | Node.js, OAuth2                     | Planned   | —    | —        |
 | 21  | LLM API Fundamentals                           | Claude/OpenAI API                   | Planned   | —    | —        |
 | 22  | RAG Fundamentals with Embeddings               | Embeddings, Node.js                 | Planned   | —    | —        |
