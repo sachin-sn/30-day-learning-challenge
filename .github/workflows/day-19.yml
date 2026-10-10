@@ -14,6 +14,7 @@ jobs:
       run:
         working-directory: day-19-cicd-matrix-canary
     strategy:
+      fail-fast: false
       matrix:
         # Two supported Node versions. TODO: check nodejs.org/en/about/previous-releases and write the date in solution.md
         node-version: [22.x, 24.x]
