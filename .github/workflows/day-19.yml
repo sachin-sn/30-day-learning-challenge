@@ -1,0 +1,29 @@
+name: Day 19 matrix
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "day-19-cicd-matrix-canary/**"
+      - ".github/workflows/day-19.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: day-19-cicd-matrix-canary
+    strategy:
+      matrix:
+        # Two supported Node versions. TODO: check nodejs.org/en/about/previous-releases and write the date in solution.md
+        node-version: [22.x, 24.x]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Show Node version
+        run: node --version
+      - name: Run tests
+        run: node --test
