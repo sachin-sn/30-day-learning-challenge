@@ -1,0 +1,7 @@
+[
+  { "q": "Why do some of my workers sit idle when I add more of them to read the same stream?", "expected": "kafka" },
+  { "q": "How do I keep compilers and dev tools out of the container I ship?", "expected": "docker" },
+  { "q": "What decides whether live traffic is sent to a container that just started?", "expected": "k8s" },
+  { "q": "How can a server stop one caller from sending too many requests per second?", "expected": "ratelimit" },
+  { "q": "Where does the tool remember which cloud resources already exist?", "expected": "terraform" }
+]

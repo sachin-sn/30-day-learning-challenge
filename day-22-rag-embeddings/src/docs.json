@@ -1,0 +1,12 @@
+[
+  { "id": "jwt", "text": "A JWT carries claims in a signed token. The signature lets a server detect any change to the header or payload, but the payload itself is only encoded, not encrypted." },
+  { "id": "kafka", "text": "In Kafka, each partition of a topic is read by at most one consumer in a consumer group, so adding consumers beyond the number of partitions leaves some idle." },
+  { "id": "redis", "text": "Redis can delete a key automatically after a time to live. Setting an expiry on cached values stops stale data from staying forever and limits memory use." },
+  { "id": "docker", "text": "A multi-stage Docker build compiles the code in one stage and copies only the result into a small final image, so build tools do not end up in production." },
+  { "id": "ratelimit", "text": "A token bucket limits how often a client can call an API. Tokens refill at a steady rate, each request spends one, and a request with no token left is rejected." },
+  { "id": "otel", "text": "A trace is a tree of spans. Each span records one operation with its start time and duration, and child spans show where time was spent inside a request." },
+  { "id": "k8s", "text": "A Kubernetes readiness probe tells the cluster when a pod can receive traffic. A pod that fails it stays running but is removed from the Service endpoints." },
+  { "id": "terraform", "text": "Terraform keeps a state file that records the resources it created. On the next plan it compares the state and the code to decide what to add, change or destroy." },
+  { "id": "grpc", "text": "gRPC defines services in protobuf files and sends binary messages over HTTP/2, which makes calls between internal services compact and strongly typed." },
+  { "id": "websocket", "text": "A WebSocket keeps one connection open after an HTTP handshake, so the server can push messages to the browser without the browser asking again." }
+]

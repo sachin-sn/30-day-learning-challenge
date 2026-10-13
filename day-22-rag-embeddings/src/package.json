@@ -1,0 +1,9 @@
+{
+  "name": "day-22-rag-embeddings",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@huggingface/transformers": "latest"
+  }
+}
