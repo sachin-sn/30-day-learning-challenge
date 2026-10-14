@@ -1,0 +1,10 @@
+{
+  "name": "day-23-vector-database-pgvector",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@huggingface/transformers": "latest",
+    "pg": "^8.11.0"
+  }
+}

@@ -62,7 +62,7 @@ better.
 | 20  | [OAuth2/OIDC & JWT Deep Dive](./day-20-oauth2-oidc-jwt) | Node.js, OAuth2 | Completed | —    | —        |
 | 21  | [LLM API Basics](./day-21-llm-api-basics)      | Claude API, Node.js                 | Completed   | —    | —        |
 | 22  | [RAG Basics: Embed, Search, Check](./day-22-rag-embeddings) | Embeddings, Node.js | Completed   | —    | —        |
-| 23  | Vector Database Deep Dive                      | pgvector or Chroma                  | Planned   | —    | —        |
+| 23  | [Vector Database: pgvector](./day-23-vector-database-pgvector) | pgvector, Docker | Completed   | —    | —        |
 | 24  | Building an MCP Server                         | Model Context Protocol SDK          | Planned   | —    | —        |
 | 25  | AI Agents & Tool-Calling Orchestration         | LangGraph or hand-rolled agent loop | Planned   | —    | —        |
 | 26  | Prompt Engineering & Evals                     | LLM APIs                            | Planned   | —    | —        |
