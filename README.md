@@ -63,7 +63,7 @@ better.
 | 21  | [LLM API Basics](./day-21-llm-api-basics)      | Claude API, Node.js                 | Completed   | —    | —        |
 | 22  | [RAG Basics: Embed, Search, Check](./day-22-rag-embeddings) | Embeddings, Node.js | Completed   | —    | —        |
 | 23  | [Vector Database: pgvector](./day-23-vector-database-pgvector) | pgvector, Docker | Completed   | —    | —        |
-| 24  | Building an MCP Server                         | Model Context Protocol SDK          | Planned   | —    | —        |
+| 24  | [MCP Server: Two Tools](./day-24-mcp-server) | MCP SDK, Node.js | Completed   | —    | —        |
 | 25  | AI Agents & Tool-Calling Orchestration         | LangGraph or hand-rolled agent loop | Planned   | —    | —        |
 | 26  | Prompt Engineering & Evals                     | LLM APIs                            | Planned   | —    | —        |
 | 27  | Local LLMs with Ollama                         | Ollama                              | Planned   | —    | —        |
