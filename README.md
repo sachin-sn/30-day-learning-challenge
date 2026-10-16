@@ -64,7 +64,7 @@ better.
 | 22  | [RAG Basics: Embed, Search, Check](./day-22-rag-embeddings) | Embeddings, Node.js | Completed   | —    | —        |
 | 23  | [Vector Database: pgvector](./day-23-vector-database-pgvector) | pgvector, Docker | Completed   | —    | —        |
 | 24  | [MCP Server: Two Tools](./day-24-mcp-server) | MCP SDK, Node.js | Completed   | —    | —        |
-| 25  | AI Agents & Tool-Calling Orchestration         | LangGraph or hand-rolled agent loop | Planned   | —    | —        |
+| 25  | [AI Agent Loop: Tool Calling](./day-25-ai-agents-tool-calling) | Claude API, Node.js | Completed   | —    | —        |
 | 26  | Prompt Engineering & Evals                     | LLM APIs                            | Planned   | —    | —        |
 | 27  | Local LLMs with Ollama                         | Ollama                              | Planned   | —    | —        |
 | 28  | React Server Components & Signals              | Next.js, Preact/Solid               | Planned   | —    | —        |

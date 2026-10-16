@@ -1,0 +1,9 @@
+{
+  "name": "day-25-ai-agents-tool-calling",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0"
+  }
+}
