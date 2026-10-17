@@ -1,0 +1,12 @@
+[
+  { "id": 1,  "text": "I was charged $49 twice this month, please refund one.", "expected": "billing" },
+  { "id": 2,  "text": "The export button does nothing when I click it in Chrome.", "expected": "bug" },
+  { "id": 3,  "text": "It would be great if I could schedule reports to be emailed every week.", "expected": "feature_request" },
+  { "id": 4,  "text": "What are your office hours?", "expected": "other" },
+  { "id": 5,  "text": "My invoice shows the wrong company name.", "expected": "billing" },
+  { "id": 6,  "text": "The app crashes every time I open the settings page.", "expected": "bug" },
+  { "id": 7,  "text": "Can you add a dark mode?", "expected": "feature_request" },
+  { "id": 8,  "text": "Thanks, the new update looks nice!", "expected": "other" },
+  { "id": 9,  "text": "I can't download my invoice, the page just shows an error.", "expected": "bug" },
+  { "id": 10, "text": "Please add an option to download invoices as a PDF.", "expected": "feature_request" }
+]

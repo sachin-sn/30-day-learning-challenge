@@ -65,7 +65,7 @@ better.
 | 23  | [Vector Database: pgvector](./day-23-vector-database-pgvector) | pgvector, Docker | Completed   | —    | —        |
 | 24  | [MCP Server: Two Tools](./day-24-mcp-server) | MCP SDK, Node.js | Completed   | —    | —        |
 | 25  | [AI Agent Loop: Tool Calling](./day-25-ai-agents-tool-calling) | Claude API, Node.js | Completed   | —    | —        |
-| 26  | Prompt Engineering & Evals                     | LLM APIs                            | Planned   | —    | —        |
+| 26  | [Prompt Evals: Ten Cases, a Score](./day-26-prompt-evals) | Claude API, Node.js | Completed   | —    | —        |
 | 27  | Local LLMs with Ollama                         | Ollama                              | Planned   | —    | —        |
 | 28  | React Server Components & Signals              | Next.js, Preact/Solid               | Planned   | —    | —        |
 | 29  | WebAssembly: Rust → JS                         | Rust, WASM                          | Planned   | —    | —        |
