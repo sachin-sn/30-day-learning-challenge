@@ -47,3 +47,7 @@ TODO
 ## Link
 
 TODO: docs link with one sentence
+
+## Later note (Day 27)
+
+On Day 27, `node run.js api v1 2` with claude-haiku-5-5 scored 9 and then 10, with case 9 changing (billing, then bug). So the model can vary between runs on these cases; it did not in the Day 26 runs (0 points of difference in those).
