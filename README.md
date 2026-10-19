@@ -67,7 +67,7 @@ better.
 | 25  | [AI Agent Loop: Tool Calling](./day-25-ai-agents-tool-calling) | Claude API, Node.js | Completed   | —    | —        |
 | 26  | [Prompt Evals: Ten Cases, a Score](./day-26-prompt-evals) | Claude API, Node.js | Completed   | —    | —        |
 | 27  | [Local LLMs with Ollama](./day-27-local-llm-ollama) | Ollama, Node.js | Completed   | —    | —        |
-| 28  | React Server Components & Signals              | Next.js, Preact/Solid               | Planned   | —    | —        |
+| 28  | [RSC and Signals: Render Counts](./day-28-rsc-signals) | Next.js, Preact Signals | Completed   | —    | —        |
 | 29  | WebAssembly: Rust → JS                         | Rust, WASM                          | Planned   | —    | —        |
 | 30  | Capstone: Integrated Mini-Project              | Combines earlier days               | Planned   | —    | —        |
 
