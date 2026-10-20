@@ -68,7 +68,7 @@ better.
 | 26  | [Prompt Evals: Ten Cases, a Score](./day-26-prompt-evals) | Claude API, Node.js | Completed   | —    | —        |
 | 27  | [Local LLMs with Ollama](./day-27-local-llm-ollama) | Ollama, Node.js | Completed   | —    | —        |
 | 28  | [RSC and Signals: Render Counts](./day-28-rsc-signals) | Next.js, Preact Signals | Completed   | —    | —        |
-| 29  | WebAssembly: Rust → JS                         | Rust, WASM                          | Planned   | —    | —        |
+| 29  | [WebAssembly: Rust to JS](./day-29-wasm-rust) | Rust, WebAssembly, Node.js | Completed   | —    | —        |
 | 30  | Capstone: Integrated Mini-Project              | Combines earlier days               | Planned   | —    | —        |
 
 Status and links are updated as each day is completed.

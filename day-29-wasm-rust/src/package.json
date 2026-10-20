@@ -1,0 +1,9 @@
+{
+  "name": "day-29-wasm-rust",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rustc --target wasm32-unknown-unknown -O --crate-type cdylib -C panic=abort -o count_primes.wasm lib.rs",
+    "bench": "node bench.js"
+  }
+}
