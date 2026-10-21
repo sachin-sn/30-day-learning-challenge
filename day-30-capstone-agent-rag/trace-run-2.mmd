@@ -1,0 +1,16 @@
+sequenceDiagram
+  participant A as Agent loop (Day 25)
+  participant C as Claude API
+  participant T as search_docs tool
+  participant E as Embedding model (Day 22)
+  participant P as pgvector (Day 23)
+  A->>C: model call 1
+  C-->>A: tool_use - 5125 ms
+  A->>T: search_docs "consumers idle when adding more consumers to same stream"
+  T->>E: embed the query
+  E-->>T: vector of 384 numbers - 12 ms
+  T->>P: top 3 by cosine distance
+  P-->>T: kafka 0.513, redis 0.153, websocket 0.150 - 12 ms
+  T-->>A: top results as text - 24 ms
+  A->>C: model call 2
+  C-->>A: end_turn - 4968 ms

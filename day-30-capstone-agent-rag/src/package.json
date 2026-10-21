@@ -1,0 +1,9 @@
+{
+  "name": "day-30-capstone-agent-rag",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0"
+  }
+}

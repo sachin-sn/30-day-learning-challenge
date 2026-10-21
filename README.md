@@ -69,7 +69,7 @@ better.
 | 27  | [Local LLMs with Ollama](./day-27-local-llm-ollama) | Ollama, Node.js | Completed   | —    | —        |
 | 28  | [RSC and Signals: Render Counts](./day-28-rsc-signals) | Next.js, Preact Signals | Completed   | —    | —        |
 | 29  | [WebAssembly: Rust to JS](./day-29-wasm-rust) | Rust, WebAssembly, Node.js | Completed   | —    | —        |
-| 30  | Capstone: Integrated Mini-Project              | Combines earlier days               | Planned   | —    | —        |
+| 30  | [Capstone: Agent + RAG, One Traced Request](./day-30-capstone-agent-rag) | Claude API, pgvector, Node.js | Completed | —    | —        |
 
 Status and links are updated as each day is completed.
 
